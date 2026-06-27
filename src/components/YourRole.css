@@ -1,0 +1,177 @@
+.yr-section {
+  background: var(--color-bg);
+  padding: 5rem 1.5rem;
+}
+
+.yr-contrib-block,
+.yr-stats-block {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.yr-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.yr-heading {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 2.5rem;
+  font-family: var(--font-heading);
+}
+
+.yr-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.yr-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.yr-card-icon {
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.yr-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+}
+
+.yr-card-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yr-card-points li {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+.yr-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.yr-divider {
+  max-width: 760px;
+  margin: 3.5rem auto;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.yr-stats-sub {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+
+.yr-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.yr-stat-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.yr-stat-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-accent);
+}
+
+.yr-stat-icon {
+  color: var(--color-accent);
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.yr-ring-wrap {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin: 0.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-ring-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.yr-ring-track {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-width: 3.5;
+}
+
+.yr-ring-fill {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+
+.yr-stat-number {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+}
+
+.yr-stat-label {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yr-ring-fill {
+    transition: none;
+  }
+}

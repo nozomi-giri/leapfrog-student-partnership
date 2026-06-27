@@ -1,0 +1,230 @@
+.gl-section {
+  background: var(--color-bg-secondary);
+  padding: 5rem 1.5rem;
+}
+
+.gl-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gl-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.gl-heading {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+}
+
+.gl-sub {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.gl-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gl-track {
+  flex: 1;
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.gl-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(60px) scale(0.97);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  cursor: pointer;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.gl-slide--prev {
+  transform: translateX(-60px) scale(0.97);
+}
+
+.gl-slide--active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  pointer-events: all;
+}
+
+.gl-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gl-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.gl-slide-overlay span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border: 1.5px solid #fff;
+  padding: 6px 20px;
+  border-radius: 20px;
+}
+
+.gl-slide--active:hover .gl-slide-overlay {
+  opacity: 1;
+}
+
+.gl-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-card-bg);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.gl-btn:hover {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.gl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.gl-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-border);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.gl-dot--active {
+  background: var(--color-accent);
+  transform: scale(1.3);
+}
+
+/* Lightbox */
+.gl-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gl-lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.gl-lightbox-close:hover {
+  border-color: #fff;
+}
+
+.gl-lightbox-img {
+  max-width: 85vw;
+  max-height: 80vh;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.gl-lightbox-img img {
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+}
+
+.gl-lightbox-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.gl-lightbox-btn:hover {
+  border-color: #fff;
+}
+
+.gl-lightbox-btn--left {
+  left: 1.5rem;
+}
+
+.gl-lightbox-btn--right {
+  right: 1.5rem;
+}
+
+.gl-lightbox-dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}

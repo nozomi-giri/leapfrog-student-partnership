@@ -1,0 +1,74 @@
+.resources {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.resources h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.resources-subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.resources-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.resource-card {
+  flex: 1 1 220px;
+  max-width: 250px;
+  padding: 1.8rem 1.4rem;
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.resource-icon {
+  color: var(--color-text);
+  margin-bottom: 1.2rem;
+}
+
+.resource-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.resource-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.resource-icon {
+  color: var(--color-accent);
+  margin-bottom: 1.2rem;
+}
+
+.resource-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.card-blue,
+.card-green,
+.card-yellow,
+.card-pink {
+  background-color: var(--color-primary-light);
+  border-left: 3px solid var(--color-accent);
+}
+
+[data-theme="dark"] .card-blue,
+[data-theme="dark"] .card-green,
+[data-theme="dark"] .card-yellow,
+[data-theme="dark"] .card-pink {
+  background-color: var(--color-bg-secondary);
+}
