@@ -2,6 +2,21 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import "./Mentors.css";
 
+import mentor1 from "../assets/gallery/Mentor1.png";
+import mentor2 from "../assets/gallery/Mentor2.png";
+import mentor3 from "../assets/gallery/Mentor3.png";
+import mentor4 from "../assets/gallery/Mentor4.png";
+import mentor5 from "../assets/gallery/Mentor5.png";
+import mentor6 from "../assets/gallery/Mentor6.png";
+import mentor7 from "../assets/gallery/Mentor7.png";
+import mentor8 from "../assets/gallery/Mentor8.png";
+import mentor9 from "../assets/gallery/Mentor9.png";
+import mentor10 from "../assets/gallery/Mentor10.png";
+import mentor11 from "../assets/gallery/Mentor11.png";
+import mentor12 from "../assets/gallery/Mentor12.png";
+import mentor13 from "../assets/gallery/Mentor13.png";
+import mentor14 from "../assets/gallery/Mentor14.png";
+
 interface Mentor {
   name: string;
   role: string;
@@ -13,85 +28,85 @@ const mentors: Mentor[] = [
   {
     name: "Adarsha Regmi",
     role: "Senior Software Engineer",
-    image: "/src/assets/gallery/Mentor1.png",
+    image: mentor1,
     bio: "Experienced professional specializing in backend development with a passion for travelling and exploring new places",
   },
   {
     name: "Ayush Bajracharya",
     role: "Senior Software Engineer",
-    image: "/src/assets/gallery/Mentor2.png",
+    image: mentor2,
     bio: "Tech-savvy and passionate about creating practical solutions, currently exploring Generative AI and cloud technologies. Off the keyboard, he enjoys football, gaming, and watching crime and thriller movies",
   },
   {
     name: "Bijen Shrestha",
     role: "Software Engineer",
-    image: "/src/assets/gallery/Mentor3.png",
+    image: mentor3,
     bio: "Returning as a facilitator for LSPP for the second time with 1.5+ years of experience. Enjoys meeting new people, eating good food, boxing and weightlifting.",
   },
   {
     name: "Dimple Saraogi",
     role: "Software Engineer",
-    image: "/src/assets/gallery/Mentor4.png",
+    image: mentor4,
     bio: "Passionate expert with 2 years of experience skilled in Spring Boot, Python, and JavaScript. Besides work, she loves dancing, music, and having movie marathons.",
   },
   {
     name: "Jenish Twayana",
     role: "Software Engineer, AI",
-    image: "/src/assets/gallery/Mentor5.png",
+    image: mentor5,
     bio: "AI engineer with 2 years of experience building intelligent systems. Sci-fi movie enthusiast who enjoys trekking and exploring new destinations.",
   },
   {
     name: "Khem Raj Upreti",
     role: "Senior Software Engineer",
-    image: "/src/assets/gallery/Mentor6.png",
+    image: mentor6,
     bio: "Software engineer with 5+ years of experience in the JavaScript ecosystem. Passionate about building products and an avid reader.",
   },
   {
     name: "Pranav Dhoj Joshi",
     role: "Senior QA Engineer",
-    image: "/src/assets/gallery/Mentor7.png",
+    image: mentor7,
     bio: "Software Quality Assurance professional with 5+ years of experience delivering high-quality web and mobile applications through manual, functional, automation, and exploratory testing.",
   },
   {
     name: "Priyanka Tuladhar",
     role: "Software Engineer, DevOps",
-    image: "/src/assets/gallery/Mentor8.png",
+    image: mentor8,
     bio: "DevOps Engineer with a creative side. When she's not deploying code, she's hiking, painting, reading, or keeping her plants alive.",
   },
   {
     name: "Purna Shrestha",
     role: "Associate Software Engineer",
-    image: "/src/assets/gallery/Mentor9.png",
+    image: mentor9,
     bio: "Software Engineer focused on development, building software with a solid foundation in Generative AI. Off the clock, he is into design, music, art, Marvel, and everything related to bikes.",
   },
   {
     name: "Sandriya Malla",
     role: "Project Manager",
-    image: "/src/assets/gallery/Mentor10.png",
+    image: mentor10,
     bio: "Project Manager leading cross-functional teams to develop software products and turn ideas into results during weekdays, while exploring creativity through painting on weekends.",
   },
   {
     name: "Saru Manandhar",
     role: "Software Engineer",
-    image: "/src/assets/gallery/Mentor11.png",
+    image: mentor11,
     bio: "Software Engineer with 2+ years of experience. Outside of work, she enjoys watching K-dramas and anime, exploring new shows, good horror stories, and content with strong character development.",
   },
   {
     name: "Sayomi Prajapati",
     role: "Associate Manager, Marketing & Communications",
-    image: "/src/assets/gallery/Mentor12.png",
+    image: mentor12,
     bio: "Seasoned marketer with 7+ years of experience in digital marketing, content creation, and events. Interests: Anime, art, Formula 1.",
   },
   {
     name: "Siza Adhikari",
     role: "Senior Software Engineer",
-    image: "/src/assets/gallery/Mentor13.png",
+    image: mentor13,
     bio: "Proactive data engineer building LLM/GenAI healthcare solutions. Barista at heart, anime and manga lover, known for sharing talks and coffee across multiple socials.",
   },
   {
     name: "Suichhya Tamrakar",
     role: "Officer, Marketing & Communications",
-    image: "/src/assets/gallery/Mentor14.png",
+    image: mentor14,
     bio: "Marketing, content & events creative with 6+ years of experience. Part-time organizational freak, full-time book hoarder with a soft spot for journaling and calligraphy.",
   },
 ];

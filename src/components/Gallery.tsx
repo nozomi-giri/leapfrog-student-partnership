@@ -2,12 +2,18 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "./Gallery.css";
 
+import picture1 from "../assets/gallery/Picture1.jpg";
+import picture2 from "../assets/gallery/Picture2.jpg";
+import picture3 from "../assets/gallery/Picture3.jpg";
+import picture4 from "../assets/gallery/Picture4.jpg";
+import picture5 from "../assets/gallery/Picture5.jpg";
+
 const images = [
-  { src: "/src/assets/gallery/Picture1.jpg", alt: "LSPP highlight 1" },
-  { src: "/src/assets/gallery/Picture2.jpg", alt: "LSPP highlight 2" },
-  { src: "/src/assets/gallery/Picture3.jpg", alt: "LSPP highlight 3" },
-  { src: "/src/assets/gallery/Picture4.jpg", alt: "LSPP highlight 4" },
-  { src: "/src/assets/gallery/Picture5.jpg", alt: "LSPP highlight 5" },
+  { src: picture1, alt: "LSPP highlight 1" },
+  { src: picture2, alt: "LSPP highlight 2" },
+  { src: picture3, alt: "LSPP highlight 3" },
+  { src: picture4, alt: "LSPP highlight 4" },
+  { src: picture5, alt: "LSPP highlight 5" },
 ];
 
 export default function Gallery() {
