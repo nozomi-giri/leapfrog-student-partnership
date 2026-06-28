@@ -10,8 +10,6 @@ import Resources from "./components/Resources";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 
-// inside your JSX wherever the section belongs:
-<YourRole />;
 function App() {
   return (
     <div>
