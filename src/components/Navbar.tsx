@@ -21,9 +21,6 @@ function Navbar() {
         </li>
       </ul>
       <div className="navbar-actions">
-        <a href="#faq" className="navbar-cta">
-          Apply Now
-        </a>
         <ThemeToggle />
       </div>
     </nav>

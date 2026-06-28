@@ -72,3 +72,6 @@
 [data-theme="dark"] .card-pink {
   background-color: var(--color-bg-secondary);
 }
+.resource-card {
+  cursor: pointer;
+}
